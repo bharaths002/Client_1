@@ -30,7 +30,7 @@ const ResetPassword = () => {
 
     try {
       
-      const res = await axios.post(`https://server-1-f254.onrender.com/api/auth/reset-password/${token}`, { password });
+            const res = await axios.post(`https://server-1-f254.onrender.com/api/auth/reset-password/${token}`, { password });
       setMessage(res.data.msg);
       
       setTimeout(() => navigate('/login'), 3000);
